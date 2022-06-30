@@ -1,0 +1,125 @@
+body{
+    background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.header{
+    text-align: center;
+    font-size: 30px;
+}
+
+span{
+    animation: changer 9s ease-out  infinite;
+}
+
+@keyframes changer {
+    
+    0%{
+        color: purple;
+        transform: .5s;
+    }
+
+   25%{
+        color: orangered;
+        transform: .5s;
+    }
+
+    50%{
+        color: yellowgreen;
+        transition: .5s;
+    }
+
+    75%{
+        color: blueviolet;
+        transition: .5s;
+    }
+
+    100%{
+        color: crimson;
+        transition: .5s;
+    }
+}
+
+.about{
+    font-size: 15px;
+    text-align: center;
+    
+}
+
+
+.img-container{
+    display: flex;
+    justify-content: center;
+    /* padding: 30px;
+     */
+    
+}
+
+
+
+
+img{
+
+    width: 500px;
+    border: 3px double brown;
+    animation: border-changer 5s ease-in-out infinite;
+}
+
+
+@keyframes border-changer {
+    
+    0%{
+        border-left-color: 3px double yellowgreen;
+        border-radius: 90px;
+        transform: .5s;
+    }
+
+   25%{
+    border: 3px double orangered;
+        transform: .5s;
+        border-radius: 70px;
+    }
+
+    50%{
+        border: 3px double orchid;
+        transition: .5s;
+        border-radius: 100px;
+    }
+
+    75%{
+        border: 3px double crimson;
+        transition: .5s;
+        border-radius: 80px;
+    }
+
+    100%{
+        border: 3px double blueviolet;
+        transition: .5s;
+        border-radius: 90px;
+    }
+}
+
+img:hover{
+    cursor: pointer;
+}
+
+#result{
+    text-align: center;
+}
+
+
+@media only screen and (max-width:680px) {
+    body{
+       min-height:100vh; 
+       overflow-y: hidden;
+    }
+
+    img{
+        width: 100%;
+        width: 350px;
+    }
+}
